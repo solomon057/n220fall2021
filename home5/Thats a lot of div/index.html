@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- title for web page -->
+
+    <title>Dynamic div</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <!-- script is used for javascript -->
+
+    <script>
+
+        //declaring variable for divs
+
+        var divsCollection;
+
+        //using for loop
+
+        for (var i = 1; i <= 100; i++) {
+
+            //generating div
+
+            var div = document.createElement("div");
+
+            //generating random numbers for colors
+
+            var red = Math.floor(Math.random() * 256);
+
+            var green = Math.floor(Math.random() * 256);
+
+            var blue = Math.floor(Math.random() * 256);
+
+            div.style.width="20px";//set width
+
+            div.style.height="20px";//set height
+
+            div.style.float = "left";//set position
+
+            //set backgroundColor
+
+            div.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+
+            document.body.appendChild(div);//append div in the body
+
+        }
+
+    </script>
+
+</body>
+
+</html>

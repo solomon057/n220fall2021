@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="250" height="250" > </canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var context = c.getContext("2d");
+
+var x=0, y=0;
+for(i=0; i<4; i++){
+   for(j=0; j<=i; j++){
+   context.rect(x, y, 50, 50);
+context.fillStyle = 'red';
+context.fill();
+x+=55;
+}
+x=0;
+y+=55;
+}
+</script>
+
+</body>
+</html>
