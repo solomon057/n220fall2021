@@ -17,7 +17,7 @@ function setup() {
    
     
     fill(255);
-    circle(shapeX, shapeY, shapeSize);
+    circle(shapeX, shapeY, shapeSiz);
     
     let eyeSize = shapeSize / 4;
     let leftEyeX = shapeX + shapeSize / 4;
