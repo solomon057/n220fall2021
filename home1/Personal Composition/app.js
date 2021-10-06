@@ -5,19 +5,19 @@ function setup() {
   function draw() {
     background(255,255,0);
     
-    let shapeSize = 100;
+    let shapeSize = 40;
     let shapeX = mouseX;
     let shapeY = mouseY;
     
     drawShape(shapeX, shapeY, shapeSize);
   }
   
-  
+
   function drawShape(shapeX, shapeY, shapeSize) {
-    strokeWeight(5);
+   
     
     fill(255);
-    square(shapeX, shapeY, shapeSize);
+    circle(shapeX, shapeY, shapeSize);
     
     let eyeSize = shapeSize / 4;
     let leftEyeX = shapeX + shapeSize / 4;
@@ -33,5 +33,4 @@ function setup() {
     let mouthY = shapeY + shapeSize - shapeSize / 4;
         
     line(mouthX, mouthY, mouthX + mouthSize, mouthY);
-    stroke(5);
   }
